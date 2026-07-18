@@ -70,33 +70,23 @@ h2::after {
   border-radius: 10px;
 }
 
-/* GALERIA MELHORADA */
 .galeria {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
+    columns: 2;
+    column-gap: 12px;
 }
 
-/* IMAGENS SEM CORTE */
 .galeria img {
-  width: 100%;
-  height: auto; /* MUITO IMPORTANTE */
-
-  border-radius: 12px;
-
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-
-  transition: 0.3s;
+    width: 100%;
+    margin-bottom: 12px;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.08);
+    transition: .3s;
+    break-inside: avoid;
 }
 
-/* Hover suave */
-.galeria img:hover {
-  transform: scale(1.02);
-}
-
-/* RESPONSIVO (fica mais bonito em telas maiores) */
-@media (min-width: 768px) {
-  .galeria {
-    grid-template-columns: repeat(3, 1fr);
-  }
+@media (min-width:768px){
+    .galeria{
+        columns:3;
+    }
 }

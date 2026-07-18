@@ -1,0 +1,223 @@
+body{
+
+    margin:0;
+    font-family:'Segoe UI',sans-serif;
+    background:linear-gradient(180deg,#F1CBFC,#e4b6f0);
+    color:#2d1f35;
+
+}
+
+/* HEADER */
+
+.topo{
+
+    width:100%;
+    padding:12px 20px;
+
+    background:rgba(255,255,255,.25);
+    backdrop-filter:blur(8px);
+
+    position:sticky;
+    top:0;
+
+}
+
+.container-topo{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+
+.logo-topo{
+
+    width:100px;
+    border-radius:50%;
+
+}
+
+.icons{
+
+    display:flex;
+    gap:15px;
+
+}
+
+.icons a{
+
+    color:#2d1f35;
+    font-size:18px;
+    transition:.2s;
+
+}
+
+.icons a:hover{
+
+    transform:scale(1.15);
+
+}
+
+
+/* CONTEÚDO */
+
+.conteudo{
+
+    padding:35px 20px;
+
+}
+
+
+/* CARD */
+
+.card-precos{
+
+    max-width:650px;
+
+    margin:auto;
+
+    background:rgba(255,255,255,.35);
+
+    backdrop-filter:blur(10px);
+
+    border-radius:18px;
+
+    padding:40px 35px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+
+/* TÍTULO */
+
+h2{
+
+    font-size:20px;
+    font-weight:500;
+    letter-spacing:1px;
+
+    position:relative;
+    display:inline-block;
+
+    margin:0;
+
+}
+
+h2::after{
+
+    content:"";
+
+    display:block;
+
+    width:40px;
+
+    height:2px;
+
+    background:#d49be8;
+
+    margin-top:6px;
+
+    border-radius:10px;
+
+}
+
+
+.subtitulo{
+
+    margin-top:18px;
+
+    color:#6d5d73;
+
+    font-size:15px;
+
+}
+
+
+/* SERVIÇOS */
+
+.servico{
+
+    display:flex;
+
+    align-items:center;
+
+    margin-top:28px;
+
+    font-size:18px;
+
+}
+
+
+.pontinhos{
+
+    flex:1;
+
+    border-bottom:1px dashed #d49be8;
+
+    margin:0 15px;
+
+}
+
+
+.valor{
+
+    font-weight:600;
+
+}
+
+
+/* BOTÃO */
+
+.agendar{
+
+    display:block;
+
+    width:230px;
+
+    margin:40px auto 0;
+
+    text-align:center;
+
+    text-decoration:none;
+
+    padding:13px;
+
+    border-radius:30px;
+
+    border:1px solid #d49be8;
+
+    color:#2d1f35;
+
+    transition:.3s;
+
+    background:rgba(255,255,255,.3);
+
+}
+
+.agendar:hover{
+
+    background:#d49be8;
+
+    color:#2d1f35;
+
+}
+
+
+/* RESPONSIVO */
+
+@media(max-width:500px){
+
+.servico{
+
+    font-size:16px;
+
+}
+
+.valor{
+
+    font-size:16px;
+
+}
+
+}
