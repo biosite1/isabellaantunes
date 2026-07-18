@@ -1,223 +1,300 @@
 body{
 
-    margin:0;
-    font-family:'Segoe UI',sans-serif;
-    background:linear-gradient(180deg,#F1CBFC,#e4b6f0);
-    color:#2d1f35;
+margin:0;
+
+font-family:'Segoe UI',sans-serif;
+
+background:linear-gradient(180deg,#F1CBFC,#e4b6f0);
+
+color:#2d1f35;
 
 }
+
+
 
 /* HEADER */
 
 .topo{
 
-    width:100%;
-    padding:12px 20px;
+width:100%;
 
-    background:rgba(255,255,255,.25);
-    backdrop-filter:blur(8px);
+padding:12px 20px;
 
-    position:sticky;
-    top:0;
+background:rgba(255,255,255,.25);
+
+backdrop-filter:blur(8px);
+
+position:sticky;
+
+top:0;
+
+z-index:999;
 
 }
+
+
+
+/* impede o conteúdo de passar por trás */
 
 .container-topo{
 
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
 
 }
+
+
 
 .logo-topo{
 
-    width:100px;
-    border-radius:50%;
+width:100px;
+
+border-radius:50%;
 
 }
+
+
 
 .icons{
 
-    display:flex;
-    gap:15px;
+display:flex;
+
+gap:15px;
 
 }
+
 
 .icons a{
 
-    color:#2d1f35;
-    font-size:18px;
-    transition:.2s;
+color:#2d1f35;
+
+font-size:18px;
+
+transition:.2s;
 
 }
+
 
 .icons a:hover{
 
-    transform:scale(1.15);
+transform:scale(1.15);
 
 }
+
 
 
 /* CONTEÚDO */
 
+
 .conteudo{
 
-    padding:35px 20px;
+padding:35px 20px;
 
 }
+
 
 
 /* CARD */
 
+
 .card-precos{
 
-    max-width:650px;
+max-width:650px;
 
-    margin:auto;
+margin:auto;
 
-    background:rgba(255,255,255,.35);
+background:rgba(255,255,255,.35);
 
-    backdrop-filter:blur(10px);
+backdrop-filter:blur(10px);
 
-    border-radius:18px;
+border-radius:18px;
 
-    padding:40px 35px;
+padding:40px 35px;
 
-    box-shadow:0 8px 20px rgba(0,0,0,.08);
+box-shadow:0 8px 20px rgba(0,0,0,.08);
 
 }
+
 
 
 /* TÍTULO */
 
+
 h2{
 
-    font-size:20px;
-    font-weight:500;
-    letter-spacing:1px;
+font-size:20px;
 
-    position:relative;
-    display:inline-block;
+font-weight:500;
 
-    margin:0;
+letter-spacing:1px;
+
+position:relative;
+
+display:inline-block;
+
+margin:0;
 
 }
+
+
 
 h2::after{
 
-    content:"";
+content:"";
 
-    display:block;
+display:block;
 
-    width:40px;
+width:40px;
 
-    height:2px;
+height:2px;
 
-    background:#d49be8;
+background:#d49be8;
 
-    margin-top:6px;
+margin-top:6px;
 
-    border-radius:10px;
+border-radius:10px;
 
 }
+
 
 
 .subtitulo{
 
-    margin-top:18px;
+margin-top:18px;
 
-    color:#6d5d73;
+font-size:15px;
 
-    font-size:15px;
+color:#6f5b78;
 
 }
 
 
+
 /* SERVIÇOS */
+
 
 .servico{
 
-    display:flex;
+display:flex;
 
-    align-items:center;
+align-items:center;
 
-    margin-top:28px;
+margin-top:28px;
 
-    font-size:18px;
+font-size:18px;
 
 }
 
 
 .pontinhos{
 
-    flex:1;
+flex:1;
 
-    border-bottom:1px dashed #d49be8;
+border-bottom:1px dashed #d49be8;
 
-    margin:0 15px;
+margin:0 15px;
 
 }
+
 
 
 .valor{
 
-    font-weight:600;
+font-weight:600;
 
 }
+
+
+
+/* SEPARADOR */
+
+
+.separador{
+
+margin-top:38px;
+
+margin-bottom:10px;
+
+font-size:16px;
+
+font-weight:500;
+
+letter-spacing:1px;
+
+color:#6f5b78;
+
+}
+
 
 
 /* BOTÃO */
 
+
 .agendar{
 
-    display:block;
+display:block;
 
-    width:230px;
+width:230px;
 
-    margin:40px auto 0;
+margin:40px auto 0;
 
-    text-align:center;
+text-align:center;
 
-    text-decoration:none;
+text-decoration:none;
 
-    padding:13px;
+padding:13px;
 
-    border-radius:30px;
+border-radius:30px;
 
-    border:1px solid #d49be8;
+border:1px solid #d49be8;
 
-    color:#2d1f35;
+color:#2d1f35;
 
-    transition:.3s;
+background:rgba(255,255,255,.3);
 
-    background:rgba(255,255,255,.3);
+transition:.3s;
 
 }
+
 
 .agendar:hover{
 
-    background:#d49be8;
+background:#d49be8;
 
-    color:#2d1f35;
+color:#2d1f35;
 
 }
 
 
-/* RESPONSIVO */
+
+/* CELULAR */
+
 
 @media(max-width:500px){
 
-.servico{
 
-    font-size:16px;
+.card-precos{
+
+padding:30px 22px;
 
 }
+
+
+.servico{
+
+font-size:16px;
+
+}
+
 
 .valor{
 
-    font-size:16px;
+font-size:16px;
 
 }
+
 
 }
